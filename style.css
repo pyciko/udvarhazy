@@ -57,10 +57,7 @@ a {
 }
 
 nav {
-    
     background-color: var(--bg-secondary);
-    position: sticky;
-    top: 20px;
     border-radius: var(--radius-l);
     z-index: 999;
 }
@@ -404,6 +401,17 @@ iframe {
     width: 900px;
     z-index: 1;
     border-radius: var(--radius-m);
+}
+
+.nav-sticky {
+    position: fixed;
+    top: 0;
+    left: 0px;
+    right: 0px;
+}
+
+.nav-sticky + .page-content {
+    margin-top: 128px;
 }
 
 @media only screen and (max-width: 600px) {

@@ -8,11 +8,20 @@ function closeNav() {
     document.body.style.overflowY = 'visible';
 }
 
+var nav = document.getElementById("pc-nav");
+var initialNavOffset = nav.offsetTop - 16;
+
 window.onscroll = function() {
     if (document.documentElement.scrollTop > 100) {
         document.getElementById("scroll-button").style.display = "block";
     } else {
         document.getElementById("scroll-button").style.display = "none";
+    }
+
+    if (window.pageYOffset > initialNavOffset) {
+        nav.classList.add("nav-sticky");
+    } else {
+        nav.classList.remove("nav-sticky");
     }
 };
 
