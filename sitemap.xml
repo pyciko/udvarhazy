@@ -2,19 +2,19 @@
 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
    <url>
-      <loc>https://example.com</loc>
+      <loc>https://pyciko.github.io/udvarhazy/index.html</loc>
       <lastmod>2023-05-15</lastmod>
    </url>
    <url>
-      <loc>https://example.com/visit</loc>
+      <loc>https://pyciko.github.io/udvarhazy/visit.html</loc>
       <lastmod>2023-05-17</lastmod>
    </url>
    <url>
-      <loc>https://example.com/expo</loc>
+      <loc>https://pyciko.github.io/udvarhazy/expo.html</loc>
       <lastmod>2023-05-16</lastmod>
    </url>
    <url>
-      <loc>https://example.com/about</loc>
+      <loc>https://pyciko.github.io/udvarhazy/about.html</loc>
       <lastmod>2023-05-18</lastmod>
    </url>
 </urlset>
