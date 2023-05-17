@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta name="description" content="Інформація про комплекс, його історію та події, що проводяться">
+    <title>Центр Удвара-Газі: Про комплекс</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
+    <link rel="apple-touch-icon" href="/assets/favicon.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicon.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<button id="scroll-button" onclick="scrollToTop()">
+		<span class="material-symbols-rounded">arrow_upward</span>
+	</button>
+
+    <header class="credited" 
+        style="background-image: url(
+        'https://washington.org/sites/default/files/styles/generic_hero_banner_1440_x_600/public/2022-04/Aero%20Hangar%20from%20Enola%20Gay%20to%20North%20Eric%20Long%20-%20National%20Air%20and%20Space%20Museum%20-%201680x672.jpg.webp?itok=SpwinQTR'
+        );" data-credit="Washington, DC">
+        <div class="heading-content">
+			<img src="assets/logo-transp.png" height="72px" alt="Логотип Центру Стівена Удвара-Газі">
+            <h1>Про комплекс</h1>
+			<div class="heading-buttons">
+				<a href="https://www.etix.com/ticket/e/1029945/timed-entry-washington-the-smithsonian-national-air-and-space-museum-general-public" class="a-btn" target="_blank"><span class="material-symbols-rounded">feed</span> Квитки</a>
+            </div>
+        </div>
+    </header>
+
+	<div id="mobile-header">
+		<span class="material-symbols-rounded" onclick="openNav()">menu</span>
+		<img src="assets/logo.png" alt="Логотип Центру Стівена Удвара-Газі">
+	</div>
+
+	<nav id="pc-nav">
+		<ul>
+			<li><a href="index.html">Головна</a></li>
+			<li><a href="expo.html">Експозиція</a></li>
+			<li><a href="visit.html">Відвідати</a></li>
+			<li><a class="nav-current" href="about.html">Про комплекс</a></li>
+		</ul>
+	</nav>	  
+
+	<nav id="mobile-nav">
+		<span class="material-symbols-rounded close-btn" onclick="closeNav()">close</span>
+		<a href="index.html">Головна</a>
+		<a href="expo.html">Експозиція</a>
+		<a href="visit.html">Відвідати</a>
+		<a href="about.html">Про комплекс</a>
+	</nav>
+
+	<div class="page-content">
+
+		<div class="img-and-text">
+			<div>
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Udvar-Hazy_Center_center_outside_view.jpg/2560px-Udvar-Hazy_Center_center_outside_view.jpg" alt="Будівля спостереження на території комплексу">
+			</div>
+			<div>
+				<h3>Історія</h3>
+				<p>
+					Центр, розроблений фірмою Хелмута, Обата та Кассабаума, які також 
+					проектували будівлю Національного музею авіації та космосу, вимагав 
+					15 років підготовки та був збудований компанією Hensel Phelps Construction.
+					Експозиційні зони включають два великих ангари: ангар Boeing Aviation з 
+					площею 293 707 квадратних футів та ангар James S. McDonnell Space з 
+					площею 53 067 квадратних футів. Вежа спостереження Дональда Д. Енгена 
+					надає можливість спостерігати за операціями з приземлення на сусідньому 
+					міжнародному аеропорту Вашингтона Даллеса. У музеї також є кінотеатр IMAX. 
+					Таксівей з'єднує музей з аеропортом.
+				</p>
+			</div>
+		</div>
+		<div class="img-and-text" data-reversed="true">
+			<div>
+				<img src="https://airandspace.si.edu/sites/default/files/styles/hero_lg/public/2022-08/NASM2022-04332%20JPG.jpg?h=1dd3cf61&itok=QjBbEaAA" alt="Велика кількість людей на виставці аеропланів">
+			</div>
+			<div>
+				<h3>Події</h3>
+				<p>
+					У музеї протягом року проводяться різноманітні заходи. Серед них лекції, 
+					підписання книг, нічні екскурсії та заходи для дітей. До більших подій 
+					музею належать святкування Хеллоуїну під назвою "Air & Scare", відкритий день, 
+					та "Інновації в авіації: сімейний день та показ авіаційної техніки на відкритому 
+					повітряному просторі".
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div class="page-content row">
+			<div class="footer-text">
+				<div>
+					<a href="index.html">Головна</a>
+					<a href="expo.html">&bull;&nbsp;Експозиція</a>
+					<a href="visit.html">&bull;&nbsp;Відвідати</a>
+					<a href="about.html">&bull;&nbsp;Про&nbsp;комплекс</a>
+				</div>
+				<p>
+					Усі права на представлені на сайті медіа-матеріали
+					належать їхнім відповідним правовласникам.
+					Цей проєкт є виключно агрегатором медіа-матеріалів.
+				</p>
+			</div>
+			<div class="adaptive-tr">
+				<a href="https://www.instagram.com/airandspacemuseum" target="_blank">
+					<img src="assets/instagram.png" width="32px" height="32px" alt="Логотип Instagram">
+				</a>
+				<a href="https://twitter.com/airandspace" target="_blank">
+					<img src="assets/twitter.png" width="32px" height="32px" alt="Логотип Twitter">
+				</a>
+			</div>
+		</div>
+	<footer>
+
+	<script src="script.js"></script>
+</body>
+</html>

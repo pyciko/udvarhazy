@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta name="description" content="Умови користування веб-сайтом.">
+    <title>Центр Удвара-Газі: Головна</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
+    <link rel="apple-touch-icon" href="/assets/favicon.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicon.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<button id="scroll-button" onclick="scrollToTop()">
+		<span class="material-symbols-rounded">arrow_upward</span>
+	</button>
+
+    <header class="credited" 
+        style="background-image: url(
+        'https://www.funinfairfaxva.com/wp-content/uploads/2021/02/Space-Shuttle-Discovery-at-Udvar-Hazy.jpg'
+        );" data-credit="Steven F. Udvar-Hazy Center">
+        <div class="heading-content">
+			<img src="assets/logo-transp.png" height="72px" alt="Логотип Центру Стівена Удвара-Газі">
+            <h1>Центр Стівена Удвара-Газі</h1>
+			<div class="heading-buttons">
+				<a href="https://www.etix.com/ticket/e/1029945/timed-entry-washington-the-smithsonian-national-air-and-space-museum-general-public" class="a-btn" target="_blank"><span class="material-symbols-rounded">feed</span> Квитки</a>
+            </div>
+        </div>
+    </header>
+
+	<div id="mobile-header">
+		<span class="material-symbols-rounded" onclick="openNav()">menu</span>
+		<img src="assets/logo.png" alt="Логотип Центру Стівена Удвара-Газі">
+	</div>
+
+	<nav id="pc-nav">
+		<ul>
+			<li><a class="nav-current" href="index.html">Головна</a></li>
+			<li><a href="expo.html">Експозиція</a></li>
+			<li><a href="visit.html">Відвідати</a></li>
+			<li><a href="about.html">Про комплекс</a></li>
+		</ul>
+	</nav>	  
+
+	<nav id="mobile-nav">
+		<span class="material-symbols-rounded close-btn" onclick="closeNav()">close</span>
+		<a href="index.html">Головна</a>
+		<a href="expo.html">Експозиція</a>
+		<a href="visit.html">Відвідати</a>
+		<a href="about.html">Про комплекс</a>
+	</nav>
+
+	<div class="page-content">
+
+		<div class="img-and-text">
+			<div>
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/DiscoveryUdvarHazy.jpg/2560px-DiscoveryUdvarHazy.jpg" alt="Фото шатлу «Діскавері» в ангарі">
+			</div>
+			<div>
+				<h3>Побачте Шатл</h3>
+				<p>
+					Побачте легендарний Discovery - шатл, використовувався для досліджень 
+					та для місій по збиранню Міжнародної космічної станції. Цей шатл 
+					транспортував телескоп Хаббл та його додаткові частини. «Діскавері» — перший 
+					космічний шатл NASA, який пережив останній запуск (на відміну від 
+					шатла «Чалленджер») та останнє приземлення (на відміну від «Колумбії»). 
+					Це також перший орбітальний апарат, що був знятий з обслуговування. 
+				</p>
+			</div>
+		</div>
+		<div class="img-and-text" data-reversed="true">
+			<div>
+				<img src="https://www.funinfairfaxva.com/wp-content/uploads/2022/05/Stephen-F.-Udvar-Hazy-Center-1024x768.jpg" alt="Фото довгого літака Air France в ангарі">
+			</div>
+			<div>
+				<h3>Історія перед очима</h3>
+				<p>
+					Дізнайтеся історію аеронавтики. Від перших аеропланів до сучасних ракет, 
+					експозіця розповідає про кроки, що зробило людство, аби доторкнутися неба,
+					а потім подолати його і злетіти ще вище. Унікальні зразки техніки, які
+					можна побачити в повному розмірі прямо перед собою. Наша експозиція є 
+					чудовим джерелом знань та надихнення для всіх, хто цікавиться авіацією 
+					та космосом. Вона дозволяє поглянути на історію цих промислів з іншого 
+					кута зору та збагнути, як вони вплинули на наше життя та наш світ.
+				</p>
+			</div>
+		</div>
+		<div class="img-and-text">
+			<div>
+				<img src="https://airandspace.si.edu/sites/default/files/styles/hero_lg/public/2022-10/52362679143_22c5a2ce5b_k.jpg?h=a1e1a043&itok=K0oWc147" alt="Фото ракетних двигунів">
+			</div>
+			<div>
+				<h3>Призначення: Місяць</h3>
+				<p>
+					Виставка "Призначення: Місяць" включає культові предмети з неперевершеної 
+					колекції артефактів Меркурія, Джеміні та Аполло Музею, включаючи космічний 
+					костюм та космічний корабель Алана Шепарда, двигун F-1 ракети Saturn V 
+					та космічний костюм та командний модуль Колумбію Ніла Армстронга з 
+					Аполлона 11. Галерея показує, як надзвичайна комбінація мотивацій, 
+					ресурсів та технологій дозволила людям ступити на Місяць - і як і чому 
+					ми повертаємося туди сьогодні.
+				</p>
+			</div>
+		</div>
+		<div class="img-and-text" data-reversed="true">
+			<div>
+				<img src="https://airandspace.si.edu/sites/default/files/styles/hero_lg/public/2022-10/52361842267_27efd1b991_k.jpg?h=cac60710&itok=2kfZ_yeW" alt="Фото передньої частини літака Eastern AirLines">
+			</div>
+			<div>
+				<h3>Америка в повітрі</h3>
+				<p>
+					Виставка "Америка в повітрі" відстежує історію комерційної авіації в Сполучених 
+					Штатах від повітряної пошти до авіаліній. Досліджуючи історію повітряного 
+					транспорту в Сполучених Штатах, ця виставка показує, як федеральна влада 
+					вплинула на авіапромисловість, як поліпшення технологій перевернуло повітряний 
+					транспорт, як змінився досвід польоту, та як різні авіалінії процвітали на 
+					протязі історії комерційної авіації.
+				</p>
+			</div>
+		</div>
+		<div class="card top-space">
+			<h2>Залишилися питання?</h2>
+			<span class="emoji-icon-inline">📞</span>+1 703-572-4118<br>
+			<span class="emoji-icon-inline">✉️</span>hwilliamson@si.edu<br>
+			<span class="emoji-icon-inline">📪</span>PO Box 37012
+			MRC 321
+			Washington, DC 20013-7012
+		</div>
+	</div>
+
+	<footer>
+		<div class="page-content row">
+			<div class="footer-text">
+				<div>
+					<a href="index.html">Головна</a>
+					<a href="expo.html">&bull;&nbsp;Експозиція</a>
+					<a href="visit.html">&bull;&nbsp;Відвідати</a>
+					<a href="about.html">&bull;&nbsp;Про&nbsp;комплекс</a>
+				</div>
+				<p>
+					Усі права на представлені на сайті медіа-матеріали
+					належать їхнім відповідним правовласникам.
+					Цей проєкт є виключно агрегатором медіа-матеріалів.
+				</p>
+			</div>
+			<div class="adaptive-tr">
+				<a href="https://www.instagram.com/airandspacemuseum" target="_blank">
+					<img src="assets/instagram.png" width="32px" height="32px" alt="Логотип Instagram">
+				</a>
+				<a href="https://twitter.com/airandspace" target="_blank">
+					<img src="assets/twitter.png" width="32px" height="32px" alt="Логотип Twitter">
+				</a>
+			</div>
+		</div>
+	<footer>
+
+	<script src="script.js"></script>
+</body>
+</html>

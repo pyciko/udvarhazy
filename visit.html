@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta name="description" content="Вартість, режим та умови відвідування">
+    <title>Центр Удвара-Газі: Відвідати</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
+    <link rel="apple-touch-icon" href="/assets/favicon.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicon.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <link rel="stylesheet" href="style.css">
+
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+	integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+	crossorigin=""/>
+
+	<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+     crossorigin=""></script>
+</head>
+<body>
+	<button id="scroll-button" onclick="scrollToTop()">
+		<span class="material-symbols-rounded">arrow_upward</span>
+	</button>
+
+    <header class="credited" 
+        style="background-image: url(
+        'https://upload.wikimedia.org/wikipedia/commons/5/56/StevenFUdvarHazy.png'
+        );" data-credit="Steven F. Udvar-Hazy Center">
+        <div class="heading-content">
+			<img src="assets/logo-transp.png" height="72px" alt="Логотип Центру Стівена Удвара-Газі">
+            <h1>Відвідати</h1>
+			<div class="heading-buttons">
+				<a href="https://www.etix.com/ticket/e/1029945/timed-entry-washington-the-smithsonian-national-air-and-space-museum-general-public" class="a-btn" target="_blank"><span class="material-symbols-rounded">feed</span> Квитки</a>
+            </div>
+        </div>
+    </header>
+
+	<div id="mobile-header">
+		<span class="material-symbols-rounded" onclick="openNav()">menu</span>
+		<img src="assets/logo.png" alt="Логотип Центру Стівена Удвара-Газі">
+	</div>
+
+	<nav id="pc-nav">
+		<ul>
+			<li><a href="index.html">Головна</a></li>
+			<li><a href="expo.html">Експозиція</a></li>
+			<li><a class="nav-current" href="visit.html">Відвідати</a></li>
+			<li><a href="about.html">Про комплекс</a></li>
+		</ul>
+	</nav>	  
+
+	<nav id="mobile-nav">
+		<span class="material-symbols-rounded close-btn" onclick="closeNav()">close</span>
+		<a href="index.html">Головна</a>
+		<a href="expo.html">Експозиція</a>
+		<a href="visit.html">Відвідати</a>
+		<a href="about.html">Про комплекс</a>
+	</nav>  
+
+	<div class="page-content">
+
+		<div class="img-and-text" data-reversed="true">
+			<div id="map"></div>
+			<div>
+				<h3>Де ми знаходимося</h3>
+				<p>
+					<span class="material-symbols-rounded">map</span>
+					14390 Air and Space Museum Parkway, Chantilly, VA 20151, United States
+					<br><br><span class="material-symbols-rounded">schedule</span>
+					10:00 - 17:30 (без вихідних)
+					<br><br><span class="material-symbols-rounded">directions_car</span>
+					Заїзд зі сторони аеропорту Вашингтон-Даллес
+				</p>
+			</div>
+		</div>
+
+		<div class="adaptive-tr">
+			<div class="card">
+				<span class="emoji-icon">🕙</span>
+				<h3>Розклад</h3>
+				<p>
+					Ми працюємо з 10 до 17:30 по буднях та вихідних. 
+					Музей також відкрито під час свят, окрім 25 грудня.
+				</p>
+			</div>
+			<div class="card">
+				<span class="emoji-icon">✋🏻</span>
+				<h3>Правила безпеки</h3>
+				<p>
+					При пересувані по території комплексу потрібно дотримуватися зон, що
+					виділені для перебування людей, та не заходити за їх межі. Заборонено
+					ставати під закріплені на стелі експонати чи пробувати дотягнутися до
+					них / поворушити їх.
+				</p>
+			</div>
+		</div>
+
+		<div class="adaptive-tr">
+			<div class="card">
+				<span class="emoji-icon">🚗</span>
+				<h3>Доступ до території</h3>
+				<p>
+					Експозиція знаходиться у великому ангарному приміщенні, що
+					розташовано неподалік від аеропорту Вашингтон-Даллес. Присутні
+					безкоштовні паркувальні місця та інфраструктура для людей з 
+					інвалідністю.
+				</p>
+			</div>
+			<div class="card">
+				<span class="emoji-icon">💶</span>
+				<h3>Вартість</h3>
+				<p>
+					Відвідування є безкоштовним та проводиться за погодинними квитками, 
+					які потрібно забронювати заздалегідь.
+				</p>
+			</div>
+		</div>
+
+		<script>
+			var map = L.map('map').setView([38.910841582414854, -77.4442258340723], 13);
+			L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				maxZoom: 19,
+				attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+			}).addTo(map);
+			map.zoomControl.remove();
+			var marker = L.marker([38.910841582414854, -77.4442258340723]).addTo(map);
+		</script>
+		
+	</div>
+
+	<footer>
+		<div class="page-content row">
+			<div class="footer-text">
+				<div>
+					<a href="index.html">Головна</a>
+					<a href="expo.html">&bull;&nbsp;Експозиція</a>
+					<a href="visit.html">&bull;&nbsp;Відвідати</a>
+					<a href="about.html">&bull;&nbsp;Про&nbsp;комплекс</a>
+				</div>
+				<p>
+					Усі права на представлені на сайті медіа-матеріали
+					належать їхнім відповідним правовласникам.
+					Цей проєкт є виключно агрегатором медіа-матеріалів.
+				</p>
+			</div>
+			<div class="adaptive-tr">
+				<a href="https://www.instagram.com/airandspacemuseum" target="_blank">
+					<img src="assets/instagram.png" width="32px" height="32px" alt="Логотип Instagram">
+				</a>
+				<a href="https://twitter.com/airandspace" target="_blank">
+					<img src="assets/twitter.png" width="32px" height="32px" alt="Логотип Twitter">
+				</a>
+			</div>
+		</div>
+	<footer>
+
+	<script src="script.js"></script>
+</body>
+</html>
