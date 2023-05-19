@@ -269,7 +269,7 @@ footer {
 }
 
 .footer-text a {
-    color: #557bb8;
+    color: #74a7fe;
 }
 
 .top-space {
@@ -305,7 +305,7 @@ footer {
     flex:1;
 }
 
-.img-and-text h3 {
+.img-and-text h2 {
     text-align: left;
     margin-bottom: var(--space-l);
     margin-top: var(--space-s);
@@ -416,7 +416,7 @@ iframe {
     h2 {
         font-size: 1.6rem; line-height: 2.2rem;
     }
-    h3{
+    h2{
         font-size: 1.5rem; line-height: 2rem;
     }
     .footer-text a {
