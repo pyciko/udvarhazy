@@ -118,11 +118,6 @@ nav a:hover {
     cursor: pointer;
 }
 
-#mobile-header > img {
-    height: 30px;
-}
-
-
 #mobile-nav {
 	background-color: var(--bg-secondary);
 	height: 100%;
