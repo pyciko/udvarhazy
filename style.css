@@ -421,6 +421,7 @@ iframe {
     }
     .footer-text a {
         display: block;
+        height: 48px;
     }
     .footer-text a:first-of-type::before {
         content: "• ";
